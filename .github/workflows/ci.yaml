@@ -40,7 +40,7 @@ jobs:
         run: terraform show -json out.plan > out.plan.json
 
       - name: Save And Archive Json Plan
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.1.7
         with:
           name: terraform-plan-json
           path: out.plan.json
@@ -52,7 +52,7 @@ jobs:
 
     steps:
       - name: Retrieve the TF Plan Artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v4.1.7
         with:
           name: terraform-plan-json
           path: out.plan.json
@@ -67,7 +67,7 @@ jobs:
 
       - name: Attach scan artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.1.7
         with:
           name: ICS-scan-artifacts
           path: |
