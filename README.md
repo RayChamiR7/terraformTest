@@ -1,5 +1,5 @@
 
-# ICS IaC Terraform Demo
+# ICS IaC Terraform Demo - Ray is learning
 
 ### Github actions example of how to use the ICS IaC Scanner with Terraform.
 
